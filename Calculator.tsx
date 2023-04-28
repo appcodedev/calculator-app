@@ -73,8 +73,8 @@ const Calculator = () => {
         </TextInput>
       </View>
       <View style={styles.buttonContainer}>
-        {layout.map((rows) => (
-          <View style={styles.row}>
+        {layout.map((rows, index) => (
+          <View style={styles.row} key={index}>
             {rows.map((row) => (
               <TouchableOpacity
                 key={row.inputValue}
